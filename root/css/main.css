@@ -1,0 +1,67 @@
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.testimonials {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 2.4rem;
+}
+
+.testimonials .img-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30.75rem;
+  max-width: 60rem;
+  min-width: 24.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 88%;
+}
+
+.testimonials .img-container__img {
+  background-image: url(../images/image-tanya.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: .6rem;
+  height: 84%;
+  min-height: 25.3rem;
+  min-width: 18.72rem;
+  overflow: hidden;
+  width: 76%;
+}
