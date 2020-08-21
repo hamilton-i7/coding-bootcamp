@@ -22,14 +22,83 @@
             background-repeat: no-repeat;
             background-size: cover;
             border-radius: .6rem;
+            box-shadow: 0 3.5rem 4rem 1rem rgba(32, 32, 70, .25);
             height: 84%;
             min-height: 25.3rem;
             min-width: 18.72rem;
-            overflow: hidden;
+            position: relative;
             width: 76%;
+
+            & .slider {
+                background-color: $color-white;
+                border-radius: 2.5rem;
+                bottom: -1.9rem;
+                display: flex;
+                justify-content: space-around;
+                left: 50%;
+                padding: 1.5rem 0;
+                position: absolute;
+                transform: translateX(-50%);
+                width: 35%;
+            }
         }
     }
 
     & .testimony {
+        margin-top: 3.25rem;
+        width: 85%;
+
+        &-about {
+            padding-top: 3rem;
+            position: relative;
+            text-align: center;
+
+            &::before {
+                background-image: url(../images/pattern-quotes.svg);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: 40%;
+                content: "";
+                display: block;
+                height: 6rem;
+                left: 50%;
+                position: absolute;
+                top: 0;
+                transform: translateX(-50%);
+                width: 50%;
+            }
+
+            &__par {
+                line-height: 1.5;
+            }
+
+            & .presentation {
+                display: flex;
+                flex-direction: column;
+                height: 4rem;
+                justify-content: space-between;
+                margin: 0 auto;
+                margin-top: 2rem;
+                width: fit-content;
+
+                &--name {
+                    color: $color-primary-1;
+                }
+
+                &--job {
+                    color: $color-primary-2;
+                }
+            }
+        }
+    }
+
+    &__bg {
+        background-image: url(../images/pattern-curve.svg);
+        background-size: cover;
+        height: 7rem;
+        margin-top: 1rem;
+        max-width: 33rem;
+        min-width: 25rem;
+        width: 76%;
     }
 }

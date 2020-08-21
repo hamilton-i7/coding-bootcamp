@@ -3,3 +3,14 @@ body {
     font-size: 1.8rem;
     font-weight: 300;
 }
+
+.heading {
+    font-size: 1.5rem;
+
+    &:first-child {
+        font-weight: 700;
+    }
+    &:nth-child(2) {
+        font-weight: 500;
+    }
+}
