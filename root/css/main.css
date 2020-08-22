@@ -133,6 +133,7 @@ body {
 }
 
 .testimonials .container .img-container__img {
+  height: 100%;
   width: 100%;
 }
 
