@@ -1,10 +1,12 @@
+@import "../components/animations";
+
 .testimonials {
     align-items: center;
     display: flex;
     flex-direction: column;
     padding-top: 2.4rem;
 
-    & .img-container {
+    & .container {
         align-items: center;
         background-image: url(../images/pattern-bg.svg);
         background-repeat: no-repeat;
@@ -12,34 +14,41 @@
         background-position: center center;
         display: flex;
         height: 30.75rem;
+        justify-content: center;
         max-width: 60rem;
         min-width: 24.5rem;
-        justify-content: center;
+        position: relative;
         width: 88%;
 
-        &__img {
-            background-image: url(../images/image-tanya.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
+        & .img-container {
             border-radius: .6rem;
             box-shadow: 0 3.5rem 4rem 1rem rgba(32, 32, 70, .25);
-            height: 84%;
+            height: 82%;
             min-height: 25.3rem;
             min-width: 18.72rem;
-            position: relative;
-            width: 76%;
+            overflow: hidden;
+            width: 77%;
+    
+            &__img {
+                // animation: slide-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                width: 100%;
+            }
+        }
 
-            & .slider {
-                background-color: $color-white;
-                border-radius: 2.5rem;
-                bottom: -1.9rem;
-                display: flex;
-                justify-content: space-around;
-                left: 50%;
-                padding: 1.5rem 0;
-                position: absolute;
-                transform: translateX(-50%);
-                width: 35%;
+        & .slider {
+            background-color: $color-white;
+            border-radius: 2.5rem;
+            bottom: .6rem;
+            display: flex;
+            justify-content: space-around;
+            left: 50%;
+            padding: 1.5rem 0;
+            position: absolute;
+            transform: translateX(-50%);
+            width: 24%;
+
+            & img {
+                transform: scale(.9);
             }
         }
     }
@@ -101,4 +110,9 @@
         min-width: 25rem;
         width: 76%;
     }
+}
+
+.slide-right {
+	-webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
